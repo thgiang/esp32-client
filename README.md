@@ -36,10 +36,10 @@ idf.py flash monitor
 
 ## 3. Build theo Board cụ thể (Khuyên dùng)
 
-Nếu bạn muốn build cho một loại board cụ thể đã được định nghĩa trong thư mục `main/boards` (ví dụ `bread-compapct-wifi`), hãy sử dụng script hỗ trợ:
+Nếu bạn muốn build cho một loại board cụ thể đã được định nghĩa trong thư mục `main/boards` (ví dụ `bread-compact-wifi`), hãy sử dụng script hỗ trợ:
 
 ```bash
-python scripts/release.py bread-compapct-wifi
+python scripts/release.py bread-compact-wifi
 ```
 
 Lệnh này sẽ tự động:
@@ -151,5 +151,6 @@ Dữ liệu chữ đều có format JSON, ví dụ `{"type": "<lệnh>", ...}`. 
 2. Nếu bạn muốn **đổi giao diện màn hình**, chỉnh sửa màu sắc, phông chữ, biểu tượng cảm xúc, hãy làm việc trong `main/display/` và các file `lvgl`.
 3. Nếu bạn muốn **can thiệp xử lý đoạn hội thoại, logic trạng thái** (Listening -> Speaking -> Idle), hãy tập trung ở file `main/application.cc` và các Handler.
 4. Nếu bạn mốn xem cách **ẩn mã hóa, thông điệp JSON mạng**, hãy xem `main/protocols/`.
+5. Nếu bạn muốn client trỏ sang server khác thì vào file esp32-client/main/Kconfig.projbuild
 
 Chúc các bạn có cái nhìn tổng quan dễ nhất về source code và tự do điều chỉnh thiết bị theo ý thích.
